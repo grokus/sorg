@@ -174,7 +174,7 @@ Every node knows the current slot mapping, and in theory a
 node that receives an operation that it can't handle could
 ask the right node for the result and forward it back to
 the client, but sending `MOVED` instead is a deliberate
-design choice. It trades of some additional client
+design choice. It trades off some additional client
 implementation complexity for fast and deterministic
 performance. As long as a client's mappings are fresh,
 operations are always executed in just one hop. Because
